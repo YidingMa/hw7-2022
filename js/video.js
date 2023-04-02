@@ -44,20 +44,20 @@ document.querySelector("#mute").addEventListener("click", function() {
     if (video.muted){
         video.muted=false;
         let muteButton= document.getElementById("mute");
-        muteButton.textContent = "Unmute";
+        muteButton.textContent = "Mute";
         console.log("it is Unmuted");
     }
     else {
         video.muted=true;
         let muteButton= document.getElementById("mute");
-        muteButton.textContent = "Mute";
+        muteButton.textContent = "Unmute";
         console.log("it is Muted");
     }
 });
 //Volume Slider
 document.querySelector("#slider").addEventListener("click", function() {
     video.volume= document.getElementById("slider").value* 0.01;
-    var volumeText = document.getElementById("volume");
+    let volumeText = document.getElementById("volume");
     volumeText.textContent = video.volume*100+"%";
     console.log(video.volume);
 });
