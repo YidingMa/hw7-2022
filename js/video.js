@@ -63,8 +63,8 @@ document.querySelector("#vintage").addEventListener("click", function() {
     document.querySelector("video").classList.add("oldSchool");
 });
 
-document.querySelector("#vintage").addEventListener("click", function() {
-    console.log("Video is old school");
-    video.classList.remove("oldSchool");
+document.querySelector("#orig").addEventListener("click", function() {
+    console.log("Video is original");
+    document.querySelector("video").classList.remove("oldSchool");
 });
 //Original
